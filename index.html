@@ -1,82 +1,88 @@
-input#deep-purple(name="theme", type="radio", checked)
-input#gold(name="theme", type="radio")
-input#space-black(name="theme", type="radio")
-input#silver(name="theme", type="radio")
-input#random(name="theme", type="radio")
-input#zoom(name="zoom", type="checkbox")
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+ 
+<input name="theme" type="radio" id="deep-purple" checked="checked"/>
+<input name="theme" type="radio" id="gold"/>
+<input name="theme" type="radio" id="space-black"/>
+<input name="theme" type="radio" id="silver"/>
+<div class="phone">
+  <div class="buttons">
+    <div class="left">
+      <div class="button"></div>
+      <div class="button"></div>
+      <div class="button"></div>
+    </div>
+    <div class="right">
+      <div class="button"></div>
+    </div>
+  </div>
+  <div class="camera"></div>
+  <div class="screen-container">
+    <div class="bg">
+      <div class="deep-purple">
+        <div class="section">
+          <div class="glow"></div>
+        </div>
+        <div class="section">
+          <div class="glow"></div>
+        </div>
+      </div>
+      <div class="gold">
+        <div class="section">
+          <div class="glow"></div>
+        </div>
+        <div class="section">
+          <div class="glow"></div>
+        </div>
+      </div>
+      <div class="space-black">
+        <div class="section">
+          <div class="glow"></div>
+        </div>
+        <div class="section">
+          <div class="glow"></div>
+        </div>
+      </div>
+      <div class="silver">
+        <div class="section">
+          <div class="glow"></div>
+        </div>
+        <div class="section">
+          <div class="glow"></div>
+        </div>
+      </div>
+    </div>
+    <div class="notch-container" tabIndex="0">
+      <div class="notch">
+        <div class="content">
+          <div class="left">
+            <div class="tile"></div>
+            <div class="text"></div>
+          </div>
+          <div class="right"></div>
+          <div class="bar">
+            <div class="duration"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="notch-blur"></div>
 
-.scene
-	.pallette
-		label.swatch(tabIndex="0", for="deep-purple")
-		label.swatch(tabIndex="0", for="gold")
-		label.swatch(tabIndex="0", for="space-black")
-		label.swatch(tabIndex="0", for="silver")
-		label.swatch(tabIndex="0", for="random")
-			.icon
-			.tooltip CMD + click to save
-
-	.zoom-con
-		label.swatch(tabIndex="0", for="zoom")
-
-	.phone-con
-		.phone
-			.buttons
-				.left
-					.button
-					.button
-					.button
-				.right
-					.button
-			.camera
-			.screen-container
-				.bg
-					.deep-purple
-						.section
-							.glow
-						.section
-							.glow
-					.gold
-						.section
-							.glow
-						.section
-							.glow
-					.space-black
-						.section
-							.glow
-						.section
-							.glow
-					.silver
-						.section
-							.glow
-						.section
-							.glow
-					.random.canvas
-						.shapes
-							.shape
-							.shape
-							.shape
-							.shape
-							.shape
-							.shape
-				.notch-container(tabIndex="0")
-					.notch
-						.content
-							.left
-								.tile
-								.text
-							.right
-							.bar
-								.duration
-				.notch-blur
-				.screen
-					.app
-						.weather
-					.app
-					.app
-					.app
-					.app
-					.app
-					.app
-					.app
-					.app
-					.app
+  </div>
+</div>
+<div class="pallette">
+  <label class="swatch" for="deep-purple"></label>
+  <label class="swatch" for="gold"></label>
+  <label class="swatch" for="space-black"></label>
+  <label class="swatch" for="silver"></label>
+</div>
+</body>
+</html>
